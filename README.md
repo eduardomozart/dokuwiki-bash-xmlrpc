@@ -7,7 +7,7 @@ This Bash script provides a simple XML-RPC client for interacting with a DokuWik
 - Bash shell
 - cURL
 - jq
-- xq - see https://github.com/kislyuk/yq
+- yq - see https://github.com/kislyuk/yq
 
 ## Usage
 

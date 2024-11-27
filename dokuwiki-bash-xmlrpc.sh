@@ -109,7 +109,7 @@ convert_xml_to_json() {
   local xml_content_without_header=$(echo -E "$xml_content" | tail -n +2)
 
   # Convert XML to JSON using xq
-  local json=$(echo "$xml_content_without_header" | xq)
+  local json=$(echo "$xml_content_without_header" | yq -p=xml -o=json)
 
   echo "$json"
 }
